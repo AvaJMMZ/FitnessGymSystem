@@ -1,0 +1,306 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 1px solid red; */
+}
+
+body {
+  font-family: system-ui;
+  background-color: black;
+}
+
+nav {
+  background-color: #ffffff;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+}
+
+.icon {
+  color: #870808;
+  padding-left: 3rem;
+  font-size: 23px;
+}
+
+.logo {
+  font-family: "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: bolder;
+  color: #870808;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-left: 0.5rem;
+}
+
+.header {
+  background-color: transparent;
+  display: flex;
+}
+
+.header .pending-con {
+  background-color: #870808;
+  width: 10rem;
+  display: flex;
+}
+
+.header .pending-con .btn-Pending {
+  margin: auto auto;
+}
+
+.header .pending-con .btn-Pending button {
+  padding: 0.3rem 0.5rem 0.3rem 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  border: none;
+  letter-spacing: 0.2rem;
+  text-align: center;
+}
+
+.header .pending-con .btn-Pending button:hover {
+  background-color: #870808;
+  color: #ffffff;
+  font-weight: bolder;
+}
+
+.header .btn-con {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  padding: 1rem;
+}
+
+.header .btn-con button {
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+  color: #ffffff;
+  letter-spacing: 1px;
+  padding: 0rem 1rem 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.header .btn-con .active-btn {
+  font-weight: bold;
+  color: #870808;
+  border-bottom: 1px solid #ffffff;
+  /* text-shadow: 0px 5px 15px rgba(255, 255, 255, 0.5); */
+}
+
+.header .admin {
+  width: 5rem;
+  color: #ffffff;
+  margin: auto auto;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.header .admin i {
+  font-size: 2rem;
+}
+
+/* Pending */
+
+.main-content-p h1 {
+  color: #870808;
+  text-align: center;
+  margin-bottom: 1rem;
+  letter-spacing: 2rem;
+}
+
+/* Could be for all CSS */
+
+.table-container {
+  background-color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #870808;
+}
+
+thead {
+  background-color: #870808;
+  color: white;
+}
+
+th {
+  text-align: center;
+}
+
+th,
+td {
+  padding: 8px;
+  border: 1px solid #870808;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+  background-color: #ddd;
+}
+
+.main-content-p td button {
+  background-color: #870808;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.main-content-p td button:hover {
+  background-color: black;
+}
+
+/* Personale Details*/
+.PD-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.PD-modal .PD-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #870808;
+  border-radius: 10px;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-transform: capitalize;
+}
+
+.PD-modal .PD-content h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.PD-content .close {
+  color: #870808;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.PD-content .close:hover,
+.PD-content .close:focus {
+  color: #000;
+  text-decoration: none;
+}
+
+.PD-content .detail-row {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.PD-content .detail-label {
+  flex: 1;
+  font-weight: bold;
+}
+
+.PD-content .detail-value {
+  flex: 1;
+}
+
+/* Medical History */
+
+.MH-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.MH-modal .MH-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #870808;
+  border-radius: 10px;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-transform: capitalize;
+}
+
+.MH-modal .MH-content h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.MH-modal .closeMH {
+  color: #870808;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.MH-modal .closeMH:hover,
+.MH-modal .closeMH:focus {
+  color: #000;
+  text-decoration: none;
+}
+
+.MH-modal .detail-row {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.MH-modal .detail-label {
+  font-weight: bold;
+  margin-left: 3rem;
+  flex: 1;
+}
+
+.MH-modal .detail-value-MH {
+  width: 5rem;
+  flex: 1;
+  text-align: left;
+}
+
+.con-sig {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.detail-label-sig {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-weight: bolder;
+}
+
+#agreementImage {
+  max-width: 200px;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+}

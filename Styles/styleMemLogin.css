@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 1px solid red; */
+}
+
+body {
+  font-family: system-ui;
+  background-color: black;
+}
+
+nav {
+  background-color: #ffffff;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+}
+
+.icon {
+  color: #870808;
+  padding-left: 3rem;
+  font-size: 23px;
+}
+
+.logo {
+  font-family: "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: bolder;
+  color: #870808;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-left: 0.5rem;
+}
+
+.main-content {
+  display: flex;
+}
+
+.setup-con {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  margin: 5% auto;
+  background-color: #ffffff;
+  padding: 1.5rem 3rem 2rem 3rem;
+  color: #870808;
+  border-radius: 2rem;
+}
+
+.setup-con button {
+  margin-top: 2rem;
+  padding: 0.5rem;
+
+  font-size: 15px;
+  letter-spacing: 1rem;
+  font-weight: 800;
+  background-color: black;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.setup-con button:hover {
+  background: #870808;
+  color: black;
+}
+
+.setup-con h1 {
+  margin-bottom: 1rem;
+}
+
+.setup-con .btn {
+  margin-top: 2rem;
+  padding: 0.5rem;
+  width: 100%;
+  font-size: 15px;
+  letter-spacing: 1rem;
+  font-weight: 800;
+  background-color: black;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.setup-con .btn:hover {
+  background: #870808;
+  color: black;
+}
+
+.img-con {
+  padding: 0rem 5rem 0rem 5rem;
+}
+
+.img-con img {
+  height: 33.5rem;
+}
+
+.setup-con .label {
+  font-size: 20px;
+  margin-top: 0.5rem;
+}
+
+.setup-con .textbox {
+  position: relative;
+  width: 20rem;
+  margin-top: 2rem;
+}
+
+.setup-con .textbox input {
+  font-size: 18px;
+  width: 100%;
+  padding: 0.5rem;
+  border: 2px solid #870808;
+  border-radius: 5px;
+  outline: none;
+  padding: 1.5rem 0.5rem 0.5rem 1rem;
+}
+
+.setup-con .textbox span {
+  position: absolute;
+  text-transform: uppercase;
+  top: 45%;
+  transform: translateY(-50%);
+  left: 1rem;
+  color: gray;
+  pointer-events: none;
+  font-size: 20px;
+  transition: 0.5s;
+}
+
+.setup-con .textbox input:valid ~ span,
+.setup-con .textbox input:focus ~ span {
+  color: #870808;
+  transform: translateX(-3px) translateY(-20px);
+  font-size: 12px;
+  background-color: #ffffff;
+  padding: 0rem 0.2rem 0rem 0.2rem;
+}
+
+.showpass {
+  font-size: 20px;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+}
+
+.register-link {
+  margin-top: 20px;
+  text-align: center;
+  color: black;
+  font-size: 14px;
+}
+
+.register-link a {
+  color: black;
+  transition: color 0.3s;
+}
+
+.register-link a:hover {
+  color: #870808;
+  font-weight: bolder;
+}
+
+footer {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+}

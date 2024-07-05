@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 1px solid red; */
+}
+
+body {
+  font-family: system-ui;
+  background-color: black;
+  color: white;
+}
+
+nav {
+  background-color: #ffffff;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+}
+
+.icon {
+  color: #870808;
+  padding-left: 3rem;
+  font-size: 23px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bolder;
+  color: #870808;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-left: 0.5rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 2px solid #ddd;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+}
+
+.filter label {
+  margin-right: 10px;
+}
+
+.filter select {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.back {
+  margin-bottom: 20px;
+}
+
+.back a {
+  text-decoration: none;
+  color: #f2f2f2;
+  font-size: 16px;
+}
+
+.back a i {
+  margin-right: 5px;
+}
+
+.back a:hover {
+  color: #870808;
+}
+
+.total-con {
+  font-size: 18px;
+}
+
+.table-con {
+  overflow-x: auto;
+  margin: 5rem;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.table th,
+.table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.table th {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.table tbody tr:hover {
+  background-color: #870808;
+}
+
+.no-data {
+  text-align: center;
+  color: #888;
+}
+
+footer {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+}

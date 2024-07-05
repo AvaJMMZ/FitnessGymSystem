@@ -1,0 +1,288 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 1px solid red; */
+}
+
+body {
+  font-family: system-ui;
+  background-color: black;
+}
+
+nav {
+  background-color: #ffffff;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+}
+
+.icon {
+  color: #870808;
+  padding-left: 3rem;
+  font-size: 23px;
+}
+
+.logo {
+  font-family: "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: bolder;
+  color: #870808;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-left: 0.5rem;
+}
+
+.main-content {
+  display: flex;
+}
+
+.setup-con > div:not(.step1) {
+  display: none;
+}
+
+.setup-con {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  margin: 5% auto;
+  background-color: #ffffff;
+  padding: 1.5rem 3rem 2rem 3rem;
+  color: #870808;
+  border-radius: 2rem;
+  width: 60%;
+}
+
+.setup-con h4 {
+  margin-bottom: 5rem;
+}
+
+.setup-con button {
+  margin-top: 2rem;
+  padding: 0.5rem;
+
+  font-size: 15px;
+  letter-spacing: 1rem;
+  font-weight: 800;
+  background-color: black;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.setup-con button:hover {
+  background: #870808;
+  color: black;
+}
+
+.container {
+  background-color: #ffffff;
+  box-shadow: 3px 10px 10px rgb(242, 239, 239);
+  padding: 2rem 3rem 3rem 3rem;
+  border-radius: 5%;
+}
+
+.img-con {
+  padding: 0rem 5rem 0rem 5rem;
+}
+
+.img-con img {
+  height: 33.5rem;
+}
+
+/* Step 1 */
+
+.step1 {
+  text-align: center;
+}
+
+.step1 h2 {
+  margin-bottom: 0.5rem;
+}
+
+.step1 .label {
+  font-size: 20px;
+  margin-top: 0.5rem;
+}
+
+.step1 .textbox {
+  position: relative;
+  width: 20rem;
+  margin-top: 0.5rem;
+}
+
+.step1 .textbox input {
+  font-size: 18px;
+  width: 100%;
+  padding: 0.5rem;
+  border: 2px solid #870808;
+  border-radius: 5px;
+  outline: none;
+  padding: 1.5rem 0.5rem 0.5rem 1rem;
+}
+
+.step1 .textbox span {
+  position: absolute;
+  text-transform: uppercase;
+  top: 45%;
+  transform: translateY(-50%);
+  left: 1rem;
+  color: gray;
+  pointer-events: none;
+  font-size: 20px;
+  transition: 0.5s;
+}
+
+.step1 .textbox input:valid ~ span,
+.step1 .textbox input:focus ~ span {
+  color: #870808;
+  transform: translateX(-3px) translateY(-20px);
+  font-size: 12px;
+  background-color: #ffffff;
+  padding: 0rem 0.2rem 0rem 0.2rem;
+}
+
+.gender-con {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+input:invalid,
+select:invalid {
+  border: 2px solid #ff5a5a;
+}
+
+input:invalid + span::before,
+select:invalid + span::before {
+  content: "⚠ ";
+  color: #ff5a5a;
+  margin-right: 5px;
+}
+
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 20px;
+  background-color: #f2f2f2;
+  padding: 0.5rem;
+  border-radius: 2rem;
+}
+
+.login-link p {
+  font-size: 18px;
+}
+
+.login-link a {
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.login-link a:hover {
+  color: #870808;
+  font-weight: bolder;
+}
+
+/* Step 2 */
+
+.radio-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.radio-table th,
+.radio-table td {
+  border: 1px solid #ddd;
+  padding: 2px;
+  text-align: left;
+}
+
+.radio-table th {
+  background-color: #f2f2f2;
+}
+
+.radio-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.radio-group input {
+  margin-right: 5px;
+}
+
+.btn-con {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btn-con button {
+  margin: 2rem;
+}
+
+.additional-condition {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+
+.additional-condition label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.additional-condition input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+  font-size: 14px;
+}
+
+.additional-condition input:focus {
+  border-color: #007bff;
+}
+
+/* Step 3 */
+
+.step3 {
+  text-align: justify;
+}
+
+.step3 h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.step3 .agree-con {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.step3 .additional-info {
+  margin-top: 2rem;
+}
+
+.step3 .additional-info label {
+  padding: 0.5rem;
+}
+
+.step3 .additional-info input {
+  padding: 0.2rem;
+}
+
+footer {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+}

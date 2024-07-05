@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 1px solid red; */
+}
+
+body {
+  font-family: system-ui;
+  background-color: black;
+  color: #870808;
+}
+
+nav {
+  background-color: #ffffff;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+}
+
+.icon {
+  color: #870808;
+  padding-left: 3rem;
+  font-size: 23px;
+}
+
+.logo {
+  font-family: "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: bolder;
+  color: #870808;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-left: 0.5rem;
+}
+
+.back-btn {
+  margin: 1rem 0rem 1rem 3rem;
+}
+
+.back-btn a {
+  text-decoration: none;
+}
+
+.back-btn button {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.back-btn button:hover {
+  background-color: #870808;
+}
+
+.back-btn button i {
+  margin-right: 5px;
+}
+
+/* Profile Details */
+.profile-container {
+  margin: 3rem 3rem;
+  padding: 20px;
+  border: 3px solid #ccc;
+  border-radius: 5px;
+  color: #f9f9f9;
+  text-transform: capitalize;
+}
+
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-heading {
+  margin: 0;
+}
+
+.toggle-form-btn {
+  background-color: #870808;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.profile-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 10px;
+}
+
+.profile-detail {
+  display: flex;
+  align-items: center;
+}
+
+.profile-detail label {
+  flex: 1;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.profile-detail span {
+  flex: 3;
+}
+
+/* Profile Form */
+.form-container {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.form-heading {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.form-group input[type="text"],
+.form-group input[type="tel"],
+.form-group input[type="email"],
+.form-group select,
+.form-group input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.form-group select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.form-container button {
+  background-color: #870808;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.changeprog-con {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9998;
+  display: none;
+}
+
+.changeprog-con form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.changeprog-con label,
+.changeprog-con select,
+.changeprog-con button {
+  margin: 0.3rem 0;
+  display: block;
+  padding: 0.5rem;
+}
+
+.changeprog-con button[type="submit"],
+.changeprog-con button[type="button"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #870808;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.changeprog-con button[type="submit"]:hover,
+.changeprog-con button[type="button"]:hover {
+  background-color: #c20f0f;
+}
+
+.changeprog-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+}
+
+.changeprog-btn button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #870808;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.changeprog-btn button:hover {
+  background-color: #c20f0f;
+}
+
+footer {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+}
